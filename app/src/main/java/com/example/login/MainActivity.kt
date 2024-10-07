@@ -67,6 +67,8 @@ fun Login() {
 
         // mientras no tecleamos mas de tres caracteres no se muestra el saludo
         if (name.value.length > 3) {
+            //Log cat para el cambio de nombre
+            Log.d("Cambio de nombre", "se actualizo el nombre a "+name.value)
             Text(
                 text = "Nombre: ${name.value}!",
                 fontSize = 24.sp
